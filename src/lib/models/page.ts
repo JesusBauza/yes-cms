@@ -1,16 +1,4 @@
-import type { HeroBlock } from './hero'
-
-export type AliadoBlock = {
-  aliados: {
-    name?: string
-    image?: string
-  }[]
-}
-
-export type Block<T = any> = {
-  type: string
-  node: T
-}
+import type { Block } from "./block"
 
 export type PageData = {
   name: string

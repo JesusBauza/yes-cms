@@ -11,7 +11,6 @@
     image: 'https://yescampus.io/images/leaders/bg1.webp',
     callAction: 'Quiero postularme',
     backgroundColor: 'rgb(0, 142, 146)',
-    callActionBgColor: 'rgb(249, 183, 23)',
     callActionTextColor: 'white',
     backgroundImage: 'https://yescampus.io/images/yefi/bg.svg',
     description:
@@ -26,7 +25,7 @@
 
 <Viewport
   class="bg-cover w-full relative overflow-hidden"
-  style="background-color: {$pageData.theme.primary}; background-image: url({get(
+  style="background-color: {get('backgroundColor')}; background-image: url({get(
     'backgroundImage'
   )})"
 >
