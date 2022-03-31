@@ -1,6 +1,7 @@
 import type { ContentBoxBlock } from '$lib/models/content-box'
 import type { GridBlock } from '$lib/models/grid'
 import type { IconsBlock } from '$lib/models/icons'
+import type { ListBlock } from '$lib/models/list'
 import type { PageData } from '$lib/models/page'
 import type { RequestHandler } from '@sveltejs/kit'
 
@@ -37,6 +38,7 @@ export const get: RequestHandler<{}, PageData> = async () => {
         {
           type: 'grid',
           node: {
+            smCols: 1,
             elements: [
               {
                 animated: true,
@@ -47,7 +49,7 @@ export const get: RequestHandler<{}, PageData> = async () => {
                     title: 'Potencia tu liderazgo',
                     underline: true,
                     body: '<p>Young Leaders es un programa de desarrollo de competencias de liderazgo juvenil en función de la defensa de la democracia y el fortalecimiento institucional de las organizaciones lideradas por jóvenes emprendedores y estudiantes, mediante la combinación de un programa de formación modular, los cuales se realizan a través de webinars y un workshop que les permite poner en práctica los conocimientos adquiridos para pasar a una segunda fase.</p>',
-                    callAction: 'Conoce los detalles'
+                    callAction: 'Conoce los detalles',
                   } as ContentBoxBlock,
                 },
               },
@@ -59,7 +61,7 @@ export const get: RequestHandler<{}, PageData> = async () => {
                   node: {
                     src: 'https://yescampus.io/images/leaders/logo.svg',
                     size: '80%',
-                  }
+                  },
                 },
               },
             ],
@@ -89,6 +91,83 @@ export const get: RequestHandler<{}, PageData> = async () => {
               },
             ],
           } as IconsBlock,
+        },
+        {
+          type: 'grid',
+          node: {
+            reverseOnLg: true,
+            smCols: 1,
+            elements: [
+              {
+                animated: true,
+                fromX: '3rem',
+                block: {
+                  type: 'contentBox',
+                  node: {
+                    title: 'Este programa es para tí, si',
+                    underline: true,
+                    body: `<ul>
+                    <li>Eres venezolano(a).</li>
+                    <li>Tienes entre 17 y 26 años de edad.</li>
+                    <li>Eres estudiante o emprendedor social.</li>
+                    <li>Te interesan temas como gobernabilidad,
+                      participación ciudadana, activismo social,
+                      política, innovación social.</li>
+                    <li>Deseas obtener fondos para materializar tu proyecto, participando en nuestro
+                      <strong>#Challenge “Ideas para el cambio”</strong>.</li>
+                  </ul>`,
+                  } as ContentBoxBlock,
+                },
+              },
+              {
+                animated: true,
+                fromX: '-3rem',
+                block: {
+                  type: 'image',
+                  node: {
+                    src: 'https://yescampus.io/images/leaders/king.webp',
+                  },
+                },
+              },
+            ],
+          } as GridBlock,
+        },
+        {
+          type: 'grid',
+          node: {
+            elements: [
+              {
+                animated: true,
+                fromX: '-3rem',
+                block: {
+                  type: 'list',
+                  node: {
+                    title: '6 módulos formativos',
+                    elements: [
+                      {
+                        title: 'Rol de la juventud y la democracia',
+                        subtitle: 'Y su participación ciudadana',
+                      },
+                      {
+                        title: 'Rol de la juventud y la democracia',
+                        subtitle: 'Y su participación ciudadana',
+                      },
+                    ],
+                  } as ListBlock,
+                },
+              },
+              {
+                animated: true,
+                fromX: '3rem',
+                block: {
+                  type: 'image',
+                  node: {
+                    src: 'https://yescampus.io/images/leaders/king.webp',
+                  },
+                },
+              },
+            ],
+          } as GridBlock,
         },
         {
           type: 'aliados',

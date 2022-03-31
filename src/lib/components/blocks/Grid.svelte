@@ -6,7 +6,7 @@
   export let data: GridBlock
 </script>
 
-<div class="content">
+<div class="py-16 content">
   <Viewport
     class="grid w-full grid-cols-$cols sm:grid-cols-$sm-cols lg:grid-cols-$lg-cols {data.reverseOnLg
       ? 'reverse'

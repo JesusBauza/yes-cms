@@ -6,6 +6,7 @@ import Hero from '$lib/components/blocks/Hero.svelte'
 import Icons from '$lib/components/blocks/Icons.svelte'
 import ImageBlock from '$lib/components/blocks/ImageBlock.svelte'
 import Title from '$lib/components/blocks/Title.svelte'
+import List from '$lib/components/blocks/List.svelte'
 
 const blocks = {
   hero: Hero,
@@ -16,6 +17,7 @@ const blocks = {
   title: Title,
   contentBox: ContentBox,
   image: ImageBlock,
+  list: List,
 }
 
 export type BlockType = keyof typeof blocks

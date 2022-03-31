@@ -8,7 +8,7 @@
 <div class="w-full">
   {#if data.title}
     <h2
-      class="w-full pb-2 mb-4 rounded t-h2"
+      class="rounded mb-4 w-full pb-2 t-h2"
       style="color: {$pageData.theme.secondary}; border-color: {$pageData.theme
         .secondary}"
       class:border-b-4={data.underline}
@@ -17,17 +17,23 @@
       {data.title}
     </h2>
   {/if}
-  <div class="t-p flex-space-4" class:mb-8={data.callAction}>
+  <div class="flex-space-4 t-p body-content" class:mb-8={data.callAction}>
     {@html data.body}
   </div>
   {#if data.callAction}
-    <div class="transform hover:-translate-y-px duration-200">
+    <div class="transform duration-200 hover:-translate-y-px">
       <a
         href={data.callActionURL}
         target="__blank"
-        class="px-8 py-4 font-bold text-white rounded-full shadow duration-200 hover:shadow-md"
+        class="rounded-full font-bold shadow text-white py-4 px-8 duration-200 hover:shadow-md"
         style:background-color={$pageData.theme.secondary}>{data.callAction}</a
       >
     </div>
   {/if}
 </div>
+
+<style>
+    .body-content :global(ul) {
+        @apply list-disc pl-12;
+    }
+</style>

@@ -2,7 +2,7 @@
   let className = ''
   export let style = ''
   export { className as class }
-  let intersecting = false
+  export let intersecting = false
   export let oneWay = false
   export let threshold = 0
 

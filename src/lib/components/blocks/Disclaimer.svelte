@@ -1,6 +1,9 @@
 <script>
   import { preferences } from '$lib/stores'
   import Viewport from '../Viewport.svelte'
+
+  // svelte-ignore unused-export-let
+  export let data
 </script>
 
 <Viewport class="bg-yes-gray-100 dark:bg-yes-gray-700" oneWay>
