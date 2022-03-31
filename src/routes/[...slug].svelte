@@ -11,12 +11,13 @@
 
 <script>
   import { pageData as data, preferences } from '$lib'
-
+  import Aliados from '$lib/components/blocks/Aliados.svelte'
   import Hero from '$lib/components/blocks/Hero.svelte'
   import Viewport from '$lib/components/Viewport.svelte'
 
   const block = {
     hero: Hero,
+    aliados: Aliados,
   }
 </script>
 

@@ -59,7 +59,7 @@
       <div class="transform duration-200 hover:-translate-y-px">
         <button
           class="rounded-full font-bold shadow text-white py-4 px-8 duration-200 hover:shadow-md"
-          style="background: {$pageData.theme.primary};"
+          style="background: {$pageData.theme.secondary};"
           >{get('callAction')}</button
         >
       </div>
