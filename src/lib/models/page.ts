@@ -1,8 +1,15 @@
-import type { HeroData } from './hero'
+import type { HeroBlock } from './hero'
 
-export type Aliado = {
+export type AliadoBlock = {
+  aliados: {
     name?: string
-    image: string
+    image?: string
+  }[]
+}
+
+export type Block<T = any> = {
+  type: string
+  node: T
 }
 
 export type PageData = {
@@ -11,6 +18,5 @@ export type PageData = {
     primary: string
     secondary: string
   }
-  hero: HeroData
-  aliados?: Aliado[]
+  blocks: Block[]
 }

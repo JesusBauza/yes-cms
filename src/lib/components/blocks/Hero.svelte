@@ -1,12 +1,12 @@
 <script lang="ts">
-  import type { HeroData } from '$lib/models/hero'
+  import type { HeroBlock } from '$lib/models/hero'
   import { pageData } from '$lib/stores'
 
   import Image from '../caravaggio/Image.svelte'
 
   import Viewport from '../Viewport.svelte'
 
-  const defaultData: HeroData = {
+  const defaultData: HeroBlock = {
     logo: 'https://yescampus.io/images/leaders/titulo.svg',
     image: 'https://yescampus.io/images/leaders/bg1.webp',
     callAction: 'Quiero postularme',
@@ -18,8 +18,10 @@
       'Bootcamp para el desarrollo de competencias de liderazgo juvenil en función de la defensa de la democracia y el fortalecimiento institucional de las organizaciones lideradas por jóvenes.',
   }
 
-  const get = <K extends keyof HeroData>(key: K): HeroData[K] =>
-    $pageData?.hero[key] || defaultData[key]
+  export let data: HeroBlock
+
+  const get = <K extends keyof HeroBlock>(key: K): HeroBlock[K] =>
+    data[key] || defaultData[key]
 </script>
 
 <Viewport
@@ -28,7 +30,6 @@
     'backgroundImage'
   )})"
 >
-  {@const logo = get('logo')}
   <div
     class="right-0 bottom-0 w-4/10 anim absolute hidden lg:block"
     style="--anim-y: 40%"
@@ -58,7 +59,7 @@
       <div class="transform duration-200 hover:-translate-y-px">
         <button
           class="rounded-full font-bold shadow text-white py-4 px-8 duration-200 hover:shadow-md"
-          style="background: {get('callActionBgColor')};"
+          style="background: {$pageData.theme.primary};"
           >{get('callAction')}</button
         >
       </div>

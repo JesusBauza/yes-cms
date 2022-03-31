@@ -1,4 +1,4 @@
-export type HeroData = {
+export type HeroBlock = {
   logo?: string // `${string}.svg`
   image?: string
   description?: string
