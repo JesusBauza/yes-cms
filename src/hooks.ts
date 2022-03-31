@@ -28,12 +28,12 @@ export const handle: Handle = async ({ event, resolve }) => {
 
 	response.headers['Cache-Control'] = `public, s-maxage=1, stale-while-revalidate=59`
 
-	if (prerendering && response.headers.get('content-type') === 'text/html') {
-    return new Response(minify(await response.text(), minification_options), {
-      status: response.status,
-      headers: response.headers
-    });
-  }
+	// if (prerendering && response.headers.get('content-type') === 'text/html') {
+  //   return new Response(minify(await response.text(), minification_options), {
+  //     status: response.status,
+  //     headers: response.headers
+  //   });
+  // }
 
 	return response
 };
