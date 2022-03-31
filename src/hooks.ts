@@ -1,6 +1,4 @@
 import type { GetSession, Handle } from '@sveltejs/kit';
-import { minify } from 'html-minifier';
-import { prerendering } from '$app/env';
  
 const minification_options = {
   collapseBooleanAttributes: true,
