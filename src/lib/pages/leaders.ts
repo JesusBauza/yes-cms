@@ -57,7 +57,7 @@ export default {
               node: {
                 src: 'https://yescampus.io/images/leaders/logo.svg',
                 size: '60%',
-                direction: 'right'
+                direction: 'right',
               },
             },
           },
@@ -178,6 +178,7 @@ export default {
     {
       type: 'aliados',
       node: {
+        greyscale: true,
         aliados: [
           {
             name: 'Aprendo y Emprendo',

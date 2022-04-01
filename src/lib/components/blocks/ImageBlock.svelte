@@ -6,6 +6,7 @@
 
 <Image
   src={data.src}
+  href={data.href}
   showOriginal=""
   alt={data.alt || ''}
   class="w-full sm:w-$w {data.direction
@@ -15,7 +16,10 @@
       ? 'mr-auto'
       : 'ml-auto'
     : 'mx-auto'}"
-  style="--w: {data.size || '100%'}"
+  style="--w: {data.size || '100%'}; border-radius: {data.borderRadius ||
+    0}; filter: {data.shadows
+    ? 'drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.25))'
+    : 'none'}"
   options={{
     o: 'webp',
     q: 90,

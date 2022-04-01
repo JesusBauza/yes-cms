@@ -1,8 +1,5 @@
 import type { ContentBoxBlock } from '$lib/models/content-box'
 import type { GridBlock } from '$lib/models/grid'
-import type { IconsBlock } from '$lib/models/icons'
-import type { ImagesListBlock } from '$lib/models/image-list'
-import type { ListBlock } from '$lib/models/list'
 
 export default {
   name: 'Viva Emprende',
@@ -80,8 +77,16 @@ export default {
             block: {
               type: 'contentBox',
               node: {
+                callAction: 'Deseo postularme',
+                callActionURL: 'https://tripetto.app/run/8GLV5ZMKFT',
                 title: 'Este programa es para tí, si',
-                body: `<p class="text-2xl"><strong><i>Este programa es para</i></strong></p>`,
+                body: `<p class="text-lg"><strong><i>Este programa es para</i></strong></p>
+                <ul>
+                <li>Emprendimientos constituidos, con al menos dos años de funcionamiento.</li>
+                <li>Ubicados en la región Centro-Occidental.</li>
+                <li>Capacidad de producción.</li>
+                <li>Disposición por aprender y formalizar su negocio.</li>
+                </ul>`,
               } as ContentBoxBlock,
             },
           },
@@ -91,6 +96,8 @@ export default {
             block: {
               type: 'image',
               node: {
+                borderRadius: '40px',
+                shadows: true,
                 src: '/pages/vivaemprende/viva2.svg',
                 size: '80%',
                 direction: 'left',
@@ -128,53 +135,27 @@ export default {
     {
       type: 'aliados',
       node: {
+        titleColor: 'black',
+        subtitleColor: 'black',
         aliados: [
           {
-            name: 'Aprendo y Emprendo',
-            image: 'https://yescampus.io/images/leaders/aliados/aye.webp',
+            name: 'Viva',
+            image: '/pages/vivaemprende/vivalogo.svg',
           },
           {
             name: 'YES Campus',
             image: 'https://yescampus.io/images/leaders/aliados/yes.webp',
           },
-          {
-            name: '1001 Ideas para mi pais',
-            image: 'https://yescampus.io/images/leaders/aliados/1001.webp',
-          },
-          {
-            name: 'Ahsoka',
-            image: 'https://yescampus.io/images/leaders/aliados/ashoka.webp',
-          },
-          {
-            name: 'Fundación Váyalo',
-            image: 'https://yescampus.io/images/leaders/aliados/vayalo.webp',
-          },
-          {
-            name: 'Esperanza Joven',
-            image: 'https://yescampus.io/images/leaders/aliados/esperanza.webp',
-          },
-          {
-            name: 'CEVAC',
-            image: 'https://yescampus.io/images/yefi/org/cevac.webp',
-          },
-          {
-            name: 'CEVAM',
-            image: 'https://yescampus.io/images/yefi/org/cevam.webp',
-          },
-          {
-            name: 'CVA',
-            image:
-              'https://centrovenezolanoamericano.org/wp-content/uploads/2019/03/logo_cva_def_it_no-75_c1.png',
-          },
         ],
       },
     },
-    { type: 'disclaimer' },
     {
       type: 'image',
       node: {
         src: '/pages/vivaemprende/banner.svg',
+        href: 'https://tripetto.app/run/8GLV5ZMKFT',
       },
     },
+    { type: 'disclaimer' },
   ],
 }

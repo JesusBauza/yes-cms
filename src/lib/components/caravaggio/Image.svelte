@@ -3,10 +3,17 @@
   import { useCaravaggio } from './useCaravaggio'
 
   export let src: string
+  export let href = ''
   export let options: CaravaggioOptions
   export let showOriginal: string = null
 
   $: url = src.endsWith(showOriginal) ? src : useCaravaggio(src, options)
 </script>
 
-<img src={url} alt={$$props.alt} {...$$restProps} />
+{#if href}
+  <a {href} target="__blank">
+    <img src={url} alt={$$props.alt} {...$$restProps} />
+  </a>
+{:else}
+  <img src={url} alt={$$props.alt} {...$$restProps} />
+{/if}
