@@ -1,6 +1,7 @@
 import type { ContentBoxBlock } from '$lib/models/content-box'
 import type { GridBlock } from '$lib/models/grid'
 import type { IconsBlock } from '$lib/models/icons'
+import type { ImagesListBlock } from '$lib/models/image-list'
 import type { ListBlock } from '$lib/models/list'
 import type { PageData } from '$lib/models/page'
 import type { RequestHandler } from '@sveltejs/kit'
@@ -142,6 +143,7 @@ export const get: RequestHandler<{}, PageData> = async () => {
                 block: {
                   type: 'list',
                   node: {
+                    id: 'modulos',
                     title: '6 módulos formativos',
                     elements: [
                       {
@@ -160,10 +162,18 @@ export const get: RequestHandler<{}, PageData> = async () => {
                 animated: true,
                 fromX: '3rem',
                 block: {
-                  type: 'image',
+                  type: 'imagesList',
                   node: {
-                    src: 'https://yescampus.io/images/leaders/king.webp',
-                  },
+                    id: 'modulos',
+                    images: [
+                      {
+                        src: 'https://yescampus.io/images/leaders/modulos1/1.webp'
+                      },
+                      {
+                        src: 'https://yescampus.io/images/leaders/modulos1/2.webp'
+                      },
+                    ]
+                  } as ImagesListBlock,
                 },
               },
             ],

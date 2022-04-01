@@ -1,12 +1,6 @@
-<script lang="ts" context="module">
-  import { writable } from 'svelte/store'
-
-  export const listsMap = writable<Record<string, number>>({})
-</script>
-
 <script lang="ts">
   import type { ListBlock } from '$lib/models/list'
-  import { pageData } from '$lib/stores'
+  import { listsMap, pageData } from '$lib/stores'
   import { onDestroy, onMount } from 'svelte'
   import Viewport from '../Viewport.svelte'
   import { browser } from '$app/env'
@@ -35,7 +29,7 @@
     }
   })
 
-  $: if (data.id && $listsMap[data.id]) $listsMap[data.id] = index
+  $: if (data.id && $listsMap) $listsMap[data.id] = index
 
   onDestroy(() => {
     clearInterval(interval)

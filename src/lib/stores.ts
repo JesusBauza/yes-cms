@@ -48,3 +48,5 @@ export const preferences = persistentWritable('preferences', {
 })
 
 export const pageData = writable<PageData>(null)
+
+export const listsMap = writable<Record<string, number>>({})
