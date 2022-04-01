@@ -6,10 +6,16 @@
 
 <Image
   src={data.src}
-  showOriginal=".svg"
+  showOriginal=""
   alt={data.alt || ''}
-  class="mx-auto"
-  style="width: {data.size || '100%'}"
+  class="w-full sm:w-$w {data.direction
+    ? data.direction == 'center'
+      ? 'mx-auto'
+      : data.direction == 'left'
+      ? 'mr-auto'
+      : 'ml-auto'
+    : 'mx-auto'}"
+  style="--w: {data.size || '100%'}"
   options={{
     o: 'webp',
     q: 90,

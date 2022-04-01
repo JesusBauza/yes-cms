@@ -8,13 +8,15 @@
 <div class="w-full">
   {#if data.title}
     <h2
-      class="rounded mb-4 w-full pb-2 t-h2"
+      class="rounded font-bold mb-4 w-full pb-2 {data.bigTitle ? 'text-5xl leading-tight' : 'text-3xl'}"
       style="color: {$pageData.theme.secondary}; border-color: {$pageData.theme
         .secondary}"
       class:border-b-4={data.underline}
       class:rounded={data.underline}
     >
-      {data.title}
+      {#each data.title.split('\n') as str}
+        {str}<br/>
+      {/each}
     </h2>
   {/if}
   <div class="flex-space-4 t-p body-content" class:mb-8={data.callAction}>
@@ -33,7 +35,7 @@
 </div>
 
 <style>
-    .body-content :global(ul) {
-        @apply list-disc pl-12;
-    }
+  .body-content :global(ul) {
+    @apply list-disc pl-12;
+  }
 </style>

@@ -6,15 +6,23 @@
 </script>
 
 <div class="py-16 content">
-  <h2 class="text-center t-h1" style:color={$pageData.theme.secondary} class:mb-4={data.subtitle}>
-    {data.title}
+  <h2
+    class="font-bold text-center text-3xl lg:text-4xl"
+    style:color={$pageData.theme.secondary}
+    class:mb-4={data.subtitle}
+  >
+    {#each data.title.split('\n') as str}
+      {str}<br />
+    {/each}
   </h2>
   {#if data.subtitle}
     <p
-      class="text-center t-h3 text-leaders-sky"
+      class="text-center text-leaders-sky t-h3"
       style:color={$pageData.theme.primary}
     >
-      {data.subtitle}
+      {#each data.subtitle.split('\n') as str}
+        {str}<br />
+      {/each}
     </p>
   {/if}
 </div>
