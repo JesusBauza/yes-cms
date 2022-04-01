@@ -39,7 +39,6 @@
 </script>
 
 <svelte:head>
-  <title>YES Campus</title>
   <link rel="preconnect" href="https://caravaggio-cdn.vercel.app" />
   {@html fontsTag}
 </svelte:head>
