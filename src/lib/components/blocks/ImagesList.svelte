@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { ImagesListBlock } from '$lib/models/image-list'
-import { listsMap } from '$lib/stores';
+  import { listsMap } from '$lib/stores'
 
   import { fly } from 'svelte/transition'
   import Image from '../caravaggio/Image.svelte'
@@ -9,10 +9,10 @@ import { listsMap } from '$lib/stores';
 
   $: console.log($listsMap)
 
-  $: idx = $listsMap[data.id] || 0
+  $: idx = $listsMap[data.id] ?? 0
 </script>
 
-<div class="my-6 w-full overflow-hidden wrapper lg:mx-auto lg:w-8/10">
+<div class="my-6 w-full overflow-hidden wrapper lg:mx-auto lg:w-9/10">
   {#each [data.images[idx]] as img, i (idx)}
     <div
       class="img"
@@ -26,7 +26,7 @@ import { listsMap } from '$lib/stores';
           o: 'webp',
           q: 90,
         }}
-        showOriginal=".svg"
+        showOriginal=""
         class="w-full"
       />
     </div>

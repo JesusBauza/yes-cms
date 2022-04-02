@@ -124,7 +124,7 @@
      inkscape:connector-curvature="0" />
 </svg>`
 
-$: svgDarkBullet = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+  $: svgDarkBullet = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -248,13 +248,15 @@ $: svgDarkBullet = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
             <h2 class="duration-200 t-h3" class:text-$text-color={index == i}>
               {i + 1}. {el.title}
             </h2>
-            <p
-              class="font-light transform duration-200 t-p"
-              class:-translate-x-4={index != i}
-              class:opacity-0={index != i}
-            >
-              {el.subtitle}
-            </p>
+            {#if el.subtitle}
+              <p
+                class="font-light transform duration-200 t-p"
+                class:-translate-x-4={index != i}
+                class:opacity-0={index != i}
+              >
+                {el.subtitle}
+              </p>
+            {/if}
           </div>
         </li>
       {/each}

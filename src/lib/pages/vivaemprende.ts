@@ -11,14 +11,14 @@ export default {
     {
       type: 'hero',
       node: {
-        logo: '/pages/leaders/title.svg',
-        image: '/pages/leaders/hero_image.png',
+        logo: '/pages/vivaemprende/title.svg',
+        image: '/pages/vivaemprende/hero_image.png',
         callAction: 'Quiero postularme',
         callActionTextColor: 'white',
         backgroundColor: 'rgb(0, 142, 146)',
-        backgroundImage: '/pages/leaders/hero_bg.svg',
+        backgroundImage: '/pages/vivaemprende/hero_bg.svg',
         description:
-          'Bootcamp para el desarrollo de competencias de liderazgo juvenil en función de la defensa de la democracia y el fortalecimiento institucional de las organizaciones lideradas por jóvenes.',
+          'Programa que busca la incorporación de emprendimientos venezolanos en el piso de venta de Viva Supercentro. Esto bajo un esquema de negocios inclusivos con alto impacto social.',
       },
     },
     {

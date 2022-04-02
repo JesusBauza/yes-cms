@@ -101,17 +101,13 @@ export default {
             block: {
               type: 'contentBox',
               node: {
-                title: 'Este programa es para tí, si',
+                title: 'Perfil',
                 underline: true,
                 body: `<ul>
-                    <li>Eres venezolano(a).</li>
-                    <li>Tienes entre 17 y 26 años de edad.</li>
-                    <li>Eres estudiante o emprendedor social.</li>
-                    <li>Te interesan temas como gobernabilidad,
-                      participación ciudadana, activismo social,
-                      política, innovación social.</li>
-                    <li>Deseas obtener fondos para materializar tu proyecto, participando en nuestro
-                      <strong>#Challenge “Ideas para el cambio”</strong>.</li>
+                    <li>Jóvenes venezolanos (as).</li>
+                    <li>Con edades de entre 17 y 25 años.</li>
+                    <li>Con interés en temas como: gobernabilidad, participación ciudadana, activismo social, política, innovación social, derechos humanos, derechos de la mujer, derechos de la comunidad LGBTQ+ y derechos de las personas con discapacidad.</li>
+                    <li>Que deseen obtener acceso a fondos para materializar un proyecto piloto, participando en el challenge <strong>#IdeasparaelCambio</strong>.</li>
                   </ul>`,
               } as ContentBoxBlock,
             },
@@ -122,7 +118,7 @@ export default {
             block: {
               type: 'image',
               node: {
-                src: 'https://yescampus.io/images/leaders/king.webp',
+                src: '/pages/leaders/hero_image.png',
               },
             },
           },
@@ -143,12 +139,22 @@ export default {
                 title: '6 módulos formativos',
                 elements: [
                   {
-                    title: 'Rol de la juventud y la democracia',
-                    subtitle: 'Y su participación ciudadana',
+                    title: 'Juventud y democracia',
                   },
                   {
-                    title: 'Rol de la juventud y la democracia',
-                    subtitle: 'Y su participación ciudadana',
+                    title: 'El poder de una visión y la construcción de cambios sociales',
+                  },
+                  {
+                    title: 'Herramientas para el desarrollo de un pensamiento ágil en los líderes',
+                  },
+                  {
+                    title: 'Activismo social, participación política y ciudadana a través de medios digitales',
+                  },
+                  {
+                    title: 'Caja de herramientas para el trabajo colaborativo y en red',
+                  },
+                  {
+                    title: 'Cambio sistémico y participación ciudadana en respuesta a los ODS 2030',
                   },
                 ],
               } as ListBlock,
@@ -163,10 +169,22 @@ export default {
                 id: 'modulos',
                 images: [
                   {
-                    src: 'https://yescampus.io/images/leaders/modulos1/1.webp',
+                    src: '/pages/vivaemprende/modulos/m1.jpg',
                   },
                   {
-                    src: 'https://yescampus.io/images/leaders/modulos1/2.webp',
+                    src: '/pages/vivaemprende/modulos/m2.jpg',
+                  },
+                  {
+                    src: '/pages/vivaemprende/modulos/m3.jpg',
+                  },
+                  {
+                    src: '/pages/vivaemprende/modulos/m4.jpg',
+                  },
+                  {
+                    src: '/pages/vivaemprende/modulos/m5.jpg',
+                  },
+                  {
+                    src: '/pages/vivaemprende/modulos/m6.jpg',
                   },
                 ],
               } as ImagesListBlock,
