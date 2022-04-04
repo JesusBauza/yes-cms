@@ -203,7 +203,8 @@ export default {
     {
       type: 'image',
       node: {
-        src: '/pages/leaders/banner_sm.png',
+        src: '/pages/leaders/banner.jpg',
+        smSrc: '/pages/leaders/banner_sm.png',
       },
     },
     {
