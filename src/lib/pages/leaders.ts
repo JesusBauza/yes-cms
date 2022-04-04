@@ -273,6 +273,10 @@ export default {
             image: 'https://yescampus.io/images/leaders/aliados/yes.webp',
           },
           {
+            name: '',
+            image: '/images/leaders/usa.png',
+          },
+          {
             name: '1001 Ideas para mi pais',
             image: 'https://yescampus.io/images/leaders/aliados/1001.webp',
           },
