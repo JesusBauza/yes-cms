@@ -274,7 +274,7 @@ export default {
           },
           {
             name: '',
-            image: '/images/leaders/usa.png',
+            image: '/pages/leaders/usa.png',
           },
           {
             name: '1001 Ideas para mi pais',
