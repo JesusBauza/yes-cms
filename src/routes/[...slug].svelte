@@ -14,6 +14,7 @@
     return {
       props: {
         blocks: pageData.blocks,
+        slug: params.slug,
       },
     }
   }
@@ -25,6 +26,7 @@
   import RenderBlock from '$lib/components/blocks/RenderBlock.svelte'
 
   export let blocks: Block[]
+  export let slug: string
 </script>
 
 <svelte:head>
@@ -32,9 +34,11 @@
 </svelte:head>
 
 <div class="w-full overflow-hidden">
-  {#each blocks as block}
-    <RenderBlock {block} />
-  {/each}
+  {#key slug}
+    {#each blocks as block}
+      <RenderBlock {block} />
+    {/each}
+  {/key}
 </div>
 
 <style global>
