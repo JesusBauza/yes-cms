@@ -63,7 +63,7 @@
 
   export const hoverable = (
     node,
-    options = { primary: false, mul: 4, sticky: false }
+    options = { primary: false, mul: 4, sticky: false, }
   ) => {
     node.addEventListener('mouseenter', mouseEnter(node, options))
     node.addEventListener('mouseleave', mouseLeave)
@@ -165,7 +165,7 @@
 
 <div
   class:hidden
-  class="flex cursor-cursor-diff"
+  class="cursor-cursor-diff flex"
   class:cursor-diff={!$hovering.color}
   use:styles={{
     x: $coords.x - $size / 2 + 'px',
@@ -177,7 +177,7 @@
   {#if $hovering.text}
     <p
       in:fade={{ duration: 200 }}
-      class="m-auto text-sm font-bold text-white font-title"
+      class="font-bold font-title m-auto text-sm text-white"
     >
       {$hovering.text}
     </p>

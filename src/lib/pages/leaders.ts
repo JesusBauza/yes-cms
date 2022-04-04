@@ -20,6 +20,7 @@ export default {
         callActionTextColor: 'white',
         backgroundColor: 'rgb(0, 142, 146)',
         backgroundImage: '/pages/leaders/hero_bg.svg',
+        callActionURL: 'https://tripetto.app/run/5OOTLWDL7L',
         description:
           'Bootcamp para el desarrollo de competencias de liderazgo juvenil en función de la defensa de la democracia y el fortalecimiento institucional de las organizaciones lideradas por jóvenes.',
       },
@@ -46,6 +47,7 @@ export default {
                 underline: true,
                 body: '<p>Young Leaders es un programa de desarrollo de competencias de liderazgo juvenil en función de la defensa de la democracia y el fortalecimiento institucional de las organizaciones lideradas por jóvenes emprendedores y estudiantes, mediante la combinación de un programa de formación modular, los cuales se realizan a través de webinars y un workshop que les permite poner en práctica los conocimientos adquiridos para pasar a una segunda fase.</p>',
                 callAction: 'Conoce los detalles',
+                callActionURL: 'https://tripetto.app/run/5OOTLWDL7L',
               } as ContentBoxBlock,
             },
           },
@@ -142,19 +144,24 @@ export default {
                     title: 'Juventud y democracia',
                   },
                   {
-                    title: 'El poder de una visión y la construcción de cambios sociales',
+                    title:
+                      'El poder de una visión y la construcción de cambios sociales',
                   },
                   {
-                    title: 'Herramientas para el desarrollo de un pensamiento ágil en los líderes',
+                    title:
+                      'Herramientas para el desarrollo de un pensamiento ágil en los líderes',
                   },
                   {
-                    title: 'Activismo social, participación política y ciudadana a través de medios digitales',
+                    title:
+                      'Activismo social, participación política y ciudadana a través de medios digitales',
                   },
                   {
-                    title: 'Caja de herramientas para el trabajo colaborativo y en red',
+                    title:
+                      'Caja de herramientas para el trabajo colaborativo y en red',
                   },
                   {
-                    title: 'Cambio sistémico y participación ciudadana en respuesta a los ODS 2030',
+                    title:
+                      'Cambio sistémico y participación ciudadana en respuesta a los ODS 2030',
                   },
                 ],
               } as ListBlock,
@@ -194,9 +201,67 @@ export default {
       } as GridBlock,
     },
     {
+      type: 'image',
+      node: {
+        src: '/pages/leaders/banner_sm.png',
+      },
+    },
+    {
+      type: 'grid',
+      node: {
+        smCols: 1,
+        elements: [
+          {
+            animated: true,
+            fromX: '-3rem',
+            block: {
+              type: 'contentBox',
+              node: {
+                title: 'Liderazgo Trascendetal',
+                underline: true,
+                callAction: 'Pustúlate aquí',
+                callActionURL: 'https://tripetto.app/run/5OOTLWDL7L',
+                body: 'El workshop tiene como objetivo fortalecer las herramientas de trabajo colaborativo y gestión de proyectos en los grupos o proyectos que resulten ganadores del challenge, pudiendo participar un máximo de 3 participantes por iniciativa para un total de 30 participantes.',
+              } as ContentBoxBlock,
+            },
+          },
+          {
+            animated: true,
+            fromX: '3rem',
+            block: {
+              type: 'list',
+              node: {
+                title: '6 módulos formativos',
+                elements: [
+                  {
+                    title: 'Agilidad para líderes transformadores',
+                  },
+                  {
+                    title: 'Construcción de un mapa de incidencias y panel de control'
+                  },
+                  {
+                    title: 'Gestión y control de proyectos'
+                  },
+                  {
+                    title: 'Estrategias de sostenibilidad. Autogestión y administración.'
+                  },
+                  {
+                    title: 'Articulación y comunicación de impacto'
+                  },
+                  {
+                    title: 'Formulación de proyectos'
+                  },
+                ],
+              } as ListBlock,
+            },
+          },
+        ],
+      } as GridBlock,
+    },
+    {
       type: 'aliados',
       node: {
-        greyscale: true,
+        grayscale: true,
         aliados: [
           {
             name: 'Aprendo y Emprendo',

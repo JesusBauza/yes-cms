@@ -1,7 +1,7 @@
 export type AliadoBlock = {
   titleColor?: string
   subtitleColor?: string
-  greyscale?: boolean
+  grayscale?: boolean
   aliados: {
     name?: string
     image?: string

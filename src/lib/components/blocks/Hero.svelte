@@ -56,10 +56,12 @@
       />
       <p class="mb-8 t-p">{get('description')}</p>
       <div class="transform duration-200 hover:-translate-y-px">
-        <button
+        <a
           class="rounded-full font-bold shadow text-white py-4 px-8 duration-200 hover:shadow-md"
           style="background: {$pageData.theme.secondary};"
-          >{get('callAction')}</button
+          href={get('callActionURL')}
+          target="__blank"
+          >{get('callAction')}</a
         >
       </div>
     </div>

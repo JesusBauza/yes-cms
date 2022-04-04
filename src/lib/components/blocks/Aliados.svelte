@@ -4,6 +4,7 @@
   import { pageData } from '$lib/stores'
 
   import Image from '../caravaggio/Image.svelte'
+  import { hoverable } from '../Cursor.svelte'
   import Viewport from '../Viewport.svelte'
 
   export let data: AliadoBlock
@@ -41,8 +42,8 @@
               o: 'webp',
             }}
             alt={c.name}
-            class="m-auto w-auto transform duration-200 hover:scale-110 {data.greyscale
-              ? 'greyscale'
+            class="m-auto w-auto transform duration-200 hover:scale-110 {data.grayscale
+              ? 'grayscale'
               : ''}"
             style="max-height: 6rem"
           />

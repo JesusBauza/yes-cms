@@ -16,8 +16,8 @@
   {#each [data.images[idx]] as img, i (idx)}
     <div
       class="img"
-      in:fly|local={{ x: 100 }}
-      out:fly|local={{ x: -100, opacity: 0.8 }}
+      in:fly|local={{ x: 50, duration: 800 }}
+      out:fly|local={{ x: -50, opacity: 0.8, duration: 800 }}
     >
       <Image
         src={img.src}

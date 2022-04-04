@@ -4,6 +4,7 @@ export type HeroBlock = {
   description?: string
   callAction?: string
   callActionTextColor?: string
+  callActionURL?: string
   backgroundColor?: string
   backgroundImage?: string
 }

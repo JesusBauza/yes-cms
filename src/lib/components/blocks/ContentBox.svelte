@@ -11,8 +11,8 @@
       class="rounded font-bold mb-4 w-full pb-2 {data.bigTitle
         ? 'text-5xl leading-tight'
         : 'text-3xl'}"
-      style="color: {$pageData.theme.secondary}; border-color: {$pageData.theme
-        .secondary}"
+      style="color: {$pageData.theme.primary}; border-color: {$pageData.theme
+        .primary}"
       class:border-b-4={data.underline}
       class:rounded={data.underline}
     >
@@ -34,7 +34,7 @@
           href={data.callActionURL}
           target="__blank"
           class="rounded-full font-bold shadow text-white py-4 px-8 duration-200 hover:shadow-md"
-          style:background-color={$pageData.theme.secondary}
+          style:background-color={$pageData.theme.primary}
           >{data.callAction}</a
         >
       </div>

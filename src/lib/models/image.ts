@@ -1,5 +1,6 @@
 export type ImageBlock = {
     src: string
+    smSrc?: string
     size?: string
     borderRadius?: string
     shadows?: boolean
