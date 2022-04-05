@@ -8,7 +8,7 @@
   <Image
     src={data.smSrc}
     href={data.href}
-    showOriginal=""
+    showOriginal=".svg"
     alt={data.alt || ''}
     class="w-full md:hidden sm:w-$w {data.direction
       ? data.direction == 'center'
@@ -30,7 +30,7 @@
   <Image
     src={data.src}
     href={data.href}
-    showOriginal=""
+    showOriginal=".svg"
     alt={data.alt || ''}
     class="w-full <md:hidden sm:w-$w {data.direction
       ? data.direction == 'center'
@@ -53,7 +53,7 @@
   <Image
     src={data.src}
     href={data.href}
-    showOriginal=""
+    showOriginal=".svg"
     alt={data.alt || ''}
     class="w-full sm:w-$w {data.direction
       ? data.direction == 'center'

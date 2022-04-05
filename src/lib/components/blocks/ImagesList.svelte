@@ -26,7 +26,7 @@
           o: 'webp',
           q: 90,
         }}
-        showOriginal=""
+        showOriginal=".svg"
         class="w-full"
       />
     </div>

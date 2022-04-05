@@ -35,7 +35,7 @@
   >
     <Image
       src={get('image')}
-      showOriginal=""
+      showOriginal=".svg"
       options={{
         q: 90,
         o: 'webp',
@@ -68,7 +68,7 @@
   </div>
   <Image
     src={get('image')}
-    showOriginal=""
+    showOriginal=".svg"
     options={{
       q: 90,
       o: 'webp',
