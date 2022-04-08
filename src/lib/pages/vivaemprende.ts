@@ -156,6 +156,5 @@ export default {
         href: 'https://tripetto.app/run/8GLV5ZMKFT',
       },
     },
-    { type: 'disclaimer' },
   ],
 }
