@@ -51,7 +51,7 @@ export default {
             block: {
               type: 'image',
               node: {
-                src: '/pages/vivaemprende/viva1.jpg',
+                src: 'https://ibb.co/PmdLk8T',
                 size: '80%',
                 direction: 'right',
               },
