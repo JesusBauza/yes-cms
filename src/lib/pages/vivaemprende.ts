@@ -51,7 +51,7 @@ export default {
             block: {
               type: 'image',
               node: {
-                src: '/static/images/viva-test.svg',
+                src: '/images/viva-test.svg',
                 size: '80%',
                 direction: 'right',
               },
