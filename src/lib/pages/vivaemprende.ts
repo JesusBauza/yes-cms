@@ -51,7 +51,7 @@ export default {
             block: {
               type: 'image',
               node: {
-                src: 'https://ibb.co/PmdLk8T',
+                src: 'https://i.ibb.co/xCNkZQm/viva-test.png',
                 size: '80%',
                 direction: 'right',
               },
