@@ -51,7 +51,7 @@ export default {
             block: {
               type: 'image',
               node: {
-                src: '/images/viva-test.svg',
+                src: '/images/Viva1.png',
                 size: '80%',
                 direction: 'right',
               },
@@ -99,7 +99,7 @@ export default {
               node: {
                 borderRadius: '40px',
                 shadows: true,
-                src: '/pages/vivaemprende/viva2.svg',
+                src: '/pages/vivaemprende/Viva2.png',
                 size: '80%',
                 direction: 'left',
               },
