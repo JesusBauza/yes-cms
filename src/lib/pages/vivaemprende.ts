@@ -12,11 +12,10 @@ export default {
       type: 'hero',
       node: {
         logo: '/pages/vivaemprende/logo-new.png',
-        image: '/pages/vivaemprende/banner-back.jpg',
         callAction: 'Quiero postularme',
         callActionTextColor: 'white',
         backgroundColor: 'rgb(0, 142, 146)',
-        backgroundImage: '/pages/vivaemprende/hero_bg.svg',
+        backgroundImage: '/pages/vivaemprende/banner-back.jpg',
         callActionURL: 'https://tripetto.app/run/8GLV5ZMKFT',
         description:
           'Programa que busca la incorporación de emprendimientos venezolanos en el piso de venta de Viva Supercentro. Esto bajo un esquema de negocios inclusivos con alto impacto social.',
