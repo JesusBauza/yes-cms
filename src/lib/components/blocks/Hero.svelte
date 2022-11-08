@@ -33,17 +33,9 @@
     class="right-0 bottom-0 w-4/10 anim absolute hidden lg:block"
     style="--anim-y: 40%"
   >
-    /*
-    <Image
-      src={get('image')}
-      showOriginal=".svg"
-      options={{
-        q: 90,
-        o: 'webp',
-      }}
-      class="w-full transform"
-    />
-    */
+    
+  
+    
   </div>
   <div class="flex flex-wrap text-white py-16 pb-0 content lg:py-12">
     <div class="w-full anim lg:w-1/2" style="--anim-x: -3rem">
