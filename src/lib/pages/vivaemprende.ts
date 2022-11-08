@@ -12,7 +12,7 @@ export default {
       type: 'hero',
       node: {
         logo: '/pages/vivaemprende/logo-new.png',
-        image: '/pages/vivaemprende/hero_image.png',
+        image: '/pages/vivaemprende/banner-back.jpg',
         callAction: 'Quiero postularme',
         callActionTextColor: 'white',
         backgroundColor: 'rgb(0, 142, 146)',
@@ -153,7 +153,7 @@ export default {
     {
       type: 'image',
       node: {
-        src: '/pages/vivaemprende/banner.svg',
+        src: '/pages/vivaemprende/banner-final.jpg',
         href: 'https://tripetto.app/run/8GLV5ZMKFT',
       },
     },
