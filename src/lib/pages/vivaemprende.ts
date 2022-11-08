@@ -83,7 +83,7 @@ export default {
                 title: 'Este programa es para tí, si',
                 body: `<p class="text-lg"><strong><i>Este programa es para</i></strong></p>
                 <ul>
-                <li>Emprendimientos constituidos, con al menos dos años de funcionamiento.</li>
+                <li>Emprendimientos constituidos.</li>
                 <li>Ubicados en la región Centro-Occidental.</li>
                 <li>Capacidad de producción.</li>
                 <li>Disposición por aprender y formalizar su negocio.</li>
