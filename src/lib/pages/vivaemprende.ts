@@ -12,7 +12,7 @@ export default {
       type: 'hero',
       node: {
         logo: '/pages/vivaemprende/logo-new.png',
-        image: false,
+        image: 'hidden',
         callAction: 'Quiero postularme',
         callActionTextColor: 'white',
         backgroundColor: 'rgb(0, 142, 146)',
