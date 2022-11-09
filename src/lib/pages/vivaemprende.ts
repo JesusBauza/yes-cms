@@ -12,6 +12,7 @@ export default {
       type: 'hero',
       node: {
         logo: '/pages/vivaemprende/logo-new.png',
+        size: '120%',
         image: '',
         callAction: 'Quiero postularme',
         callActionTextColor: 'white',
