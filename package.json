@@ -19,8 +19,7 @@
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "package": "svelte-kit package",
-    "postbuild@comment": "cp node_modules/sharp/build .vercel_build_output/functions/node/render -r;cp node_modules/sharp/vendor/8.11.3/linux-x64/lib/libvips-cpp.so.42 .vercel_build_output/functions/node/render/;ls .vercel_build_output/functions/node/render/"
+    "package": "svelte-kit package"
   },
   "devDependencies": {
     "@poppanator/sveltekit-svg": "^0.2.3",
@@ -53,7 +52,7 @@
     "caravaggio-plugin-nextjs": "^0.4.2",
     "carbon-icons-svelte": "^10.45.1",
     "html-minifier": "^4.0.0",
-    "sharp": "^0.29.3",
+    "sharp": "^0.32.6",
     "svelte-marquee-text-widget": "^1.1.0",
     "three": "^0.135.0"
   }
