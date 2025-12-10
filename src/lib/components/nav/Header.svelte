@@ -57,7 +57,11 @@
         class="flex pointer-events-auto"
         transition:fly|local={{ x: -50, duration: 400 }}
       >
-        <a href="https://yescampus.io" title="Home" class="rounded-xl duration-100">
+        <a
+          href="https://yescampus.co"
+          title="Home"
+          class="rounded-xl duration-100"
+        >
           <img
             src="/images/logo{dark ? '-white' : ''}.svg"
             class="h-16 transform duration-200 hover:scale-110"
@@ -147,7 +151,9 @@
   }
 
   .nav-link {
-    transition: border 0.2s ease-in-out, color 0s ease-in-out;
+    transition:
+      border 0.2s ease-in-out,
+      color 0s ease-in-out;
     margin-bottom: -2px;
     border-bottom: 2px solid transparent;
   }

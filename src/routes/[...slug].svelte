@@ -5,7 +5,7 @@
     const res = await fetch(`/pages/${params.slug}.json`)
     if (!res.ok) {
       return {
-        redirect: `https://yescampus.io/${params.slug}`,
+        redirect: `https://yescampus.co/${params.slug}`,
         status: 302,
       }
     }

@@ -7,12 +7,12 @@
   import Viewport from '../Viewport.svelte'
 
   const defaultData: HeroBlock = {
-    logo: 'https://yescampus.io/images/leaders/titulo.svg',
-    image: 'https://yescampus.io/images/leaders/bg1.webp',
+    logo: 'https://yescampus.co/images/leaders/titulo.svg',
+    image: 'https://yescampus.co/images/leaders/bg1.webp',
     callAction: 'Quiero postularme',
     backgroundColor: 'rgb(0, 142, 146)',
     callActionTextColor: 'white',
-    backgroundImage: 'https://yescampus.io/images/yefi/bg.svg',
+    backgroundImage: 'https://yescampus.co/images/yefi/bg.svg',
     description:
       'Bootcamp para el desarrollo de competencias de liderazgo juvenil en función de la defensa de la democracia y el fortalecimiento institucional de las organizaciones lideradas por jóvenes.',
   }
@@ -26,17 +26,13 @@
 <Viewport
   class="bg-cover w-full relative overflow-hidden"
   style="background-color: {get('backgroundColor')}; background-image: url({get(
-    'backgroundImage'
+    'backgroundImage',
   )})"
 >
   <div
     class="right-0 bottom-0 w-4/10 anim absolute hidden lg:block"
     style="--anim-y: 40%"
-  >
-    
-  
-    
-  </div>
+  ></div>
   <div class="flex flex-wrap text-white py-16 pb-0 content lg:py-12">
     <div class="w-full anim lg:w-1/2" style="--anim-x: -3rem">
       <Image
@@ -54,8 +50,7 @@
           class="rounded-full font-bold shadow text-white py-4 px-8 duration-200 hover:shadow-md"
           style="background: {$pageData.theme.secondary};"
           href={get('callActionURL')}
-          target="__blank"
-          >{get('callAction')}</a
+          target="__blank">{get('callAction')}</a
         >
       </div>
     </div>

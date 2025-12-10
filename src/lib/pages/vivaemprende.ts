@@ -146,7 +146,7 @@ export default {
           },
           {
             name: 'YES Campus',
-            image: 'https://yescampus.io/images/leaders/aliados/yes.webp',
+            image: 'https://yescampus.co/images/leaders/aliados/yes.webp',
           },
         ],
       },

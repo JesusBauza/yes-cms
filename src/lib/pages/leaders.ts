@@ -57,7 +57,7 @@ export default {
             block: {
               type: 'image',
               node: {
-                src: 'https://yescampus.io/images/leaders/logo.svg',
+                src: 'https://yescampus.co/images/leaders/logo.svg',
                 size: '60%',
                 direction: 'right',
               },
@@ -265,12 +265,11 @@ export default {
         grayscale: true,
         aliados: [
           {
-            name: 'Aprendo y Emprendo',
-            image: 'https://yescampus.io/images/leaders/aliados/aye.webp',
+            image: 'https://yescampus.co/images/leaders/aliados/aye.webp',
           },
           {
             name: 'YES Campus',
-            image: 'https://yescampus.io/images/leaders/aliados/yes.webp',
+            image: 'https://yescampus.co/images/leaders/aliados/yes.webp',
           },
           {
             name: '',
@@ -278,27 +277,27 @@ export default {
           },
           {
             name: '1001 Ideas para mi pais',
-            image: 'https://yescampus.io/images/leaders/aliados/1001.webp',
+            image: 'https://yescampus.co/images/leaders/aliados/1001.webp',
           },
           {
             name: 'Ahsoka',
-            image: 'https://yescampus.io/images/leaders/aliados/ashoka.webp',
+            image: 'https://yescampus.co/images/leaders/aliados/ashoka.webp',
           },
           {
             name: 'Fundación Váyalo',
-            image: 'https://yescampus.io/images/leaders/aliados/vayalo.webp',
+            image: 'https://yescampus.co/images/leaders/aliados/vayalo.webp',
           },
           {
             name: 'Esperanza Joven',
-            image: 'https://yescampus.io/images/leaders/aliados/esperanza.webp',
+            image: 'https://yescampus.co/images/leaders/aliados/esperanza.webp',
           },
           {
             name: 'CEVAC',
-            image: 'https://yescampus.io/images/yefi/org/cevac.webp',
+            image: 'https://yescampus.co/images/yefi/org/cevac.webp',
           },
           {
             name: 'CEVAM',
-            image: 'https://yescampus.io/images/yefi/org/cevam.webp',
+            image: 'https://yescampus.co/images/yefi/org/cevam.webp',
           },
           {
             name: 'CVA',
