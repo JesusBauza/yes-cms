@@ -35,6 +35,7 @@ collections:
               - {label: "Description", name: "description", widget: "text"}
               - {label: "Call Action", name: "callAction", widget: "string"}
               - {label: "Call Action URL", name: "callActionURL", widget: "string"}
+              - {label: "Call Action Text Color", name: "callActionTextColor", widget: "color", required: false}
           - label: "Title"
             name: "title"
             widget: "object"
@@ -46,6 +47,8 @@ collections:
             widget: "object"
             fields:
               - {label: "Title", name: "title", widget: "string", required: false}
+              - {label: "Big Title", name: "bigTitle", widget: "boolean", required: false}
+              - {label: "Underline Title", name: "underline", widget: "boolean", required: false}
               - {label: "Body", name: "body", widget: "markdown"}
               - {label: "Call Action", name: "callAction", widget: "string", required: false}
               - {label: "Call Action URL", name: "callActionURL", widget: "string", required: false}
